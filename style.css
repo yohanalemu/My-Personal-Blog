@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
 background-color:#e2e4ec;
 height:100vh;
 width:100%;
-max-width:350px;
+max-width:300px;
 position:fixed;
 top:0;
 right:-350px;
@@ -24,11 +24,10 @@ display:flex;
 padding-top:100px;
 flex-direction:column;
 align-items:left;
-font-size:2rem;
+font-size:1.5rem;
 transition: .3s ease;
 
 }
-
 
 .off-screen-menu.active {
   right:0;
@@ -161,6 +160,10 @@ li a{
   border: none;
   cursor: pointer;
   display: none; 
+  z-index: 101;
+  top: -320px;        /* roughly same vertical spacing as navbar */
+  right: 0px;  
+  position: relative;    /* match the navbar's right padding */
 }
 
 /* Navigation links */

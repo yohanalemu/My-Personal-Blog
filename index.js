@@ -19,16 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
      hamburgerMenu.classList.toggle('active');
       offScreenMenu.classList.toggle('active');
      
-      
     });
   
     // Close the menu
-    closeMenu.addEventListener('click', () => {
+    const closeMenuBtn = document.getElementById('close-menu');
+    closeMenuBtn.addEventListener('click', () => {
+      hamburgerMenu.classList.remove('active');
       offScreenMenu.classList.remove('active');
-      
     });
-  
-
+    
   });
 
 //SLIDER
